@@ -1,3 +1,10 @@
+
+
+// Progetto n1 : BLE SCANNER
+// Scansione dei Adertising packages dei dispositivi circostanti
+
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -144,7 +151,6 @@ int main() {
         }
     }
 
-    printf("--------------------------------------------------\n");
     printf("Scansione completata. Spegnimento della radio...\n");
     hci_le_set_scan_enable(sock, 0x00, 0x00, 1000);
     
